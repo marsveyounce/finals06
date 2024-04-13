@@ -1,0 +1,904 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nothing+You+Could+Do&family=Urbanist:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+/* IMAGES */
+image {
+    max-width: 100%;
+}
+
+/* MAIN STRUCTURE */
+body {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.30));
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 25px;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+nav {
+    flex-grow: 1;
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 auto;
+}
+
+nav ul li a {
+    color: #392917;
+}
+
+nav ul li a:hover {
+    color: #9E8976;
+}
+
+nav ul li a:focus {
+    color: #6A5745;
+}
+
+main {
+    width: 100%;
+}
+
+.logo {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 35%;
+}
+
+.active {
+    color: #D89E6C;
+}
+
+#title-container {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #097969 url("../images/home-main.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-items: left;
+    background-position-y: -675px;
+}
+
+#title-container h1 {
+    position: absolute;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #F8F7F4;
+    opacity: 85%;
+    z-index: 1;
+    left: 70px;
+    bottom: 285px;
+    font-size: 80px;
+}
+
+#title-container h2 {
+    position: absolute;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    color: #F8F7F4;
+    opacity: 85%;
+    z-index: 1;
+    text-transform: uppercase;
+    left: 60px;
+    bottom: 250px;
+    font-size: 44px;
+}
+
+#welcome {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #392417, #795E4D);
+    color: #F8F7F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+#welcome-image {
+    width: 800px;
+    height: auto;
+    padding: 75px 0 75px 150px;
+}
+
+#welcome section {
+    display: flex;
+    flex-direction: row;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
+}
+
+#text-container h1 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+    font-size: 70px;
+}
+
+#text-container p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+    font-size: 25px;
+    margin: 18px 0;
+}
+
+#find-us {
+    width: 100%;
+    text-align: center;
+}
+
+#find-us-logo {
+    width: 5%;
+    margin: 0 0 8px 0;
+}
+
+#find-us p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+#address-container {
+    background: #795E4D;
+    text-align: center;
+    color: #F8F7F4;
+    padding: 12px 0 75px 0;
+    font-size: 32px;
+}
+
+/* MAP */
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+#map {
+    height: 250px;
+}
+
+#google-maps-canvas {
+    height: 100%;
+    width: 100%;
+}
+
+.map-generator {
+    max-width: 100%;
+    max-height: 100%;
+    background: none;
+}
+
+.line-divider-white {
+    border-top: 0.5px solid #F8F7F4;
+    width: 25%;
+    margin: 4px 0;
+    z-index: 3;
+}
+
+.line-divider-brown {
+    border-top: 0.5px solid #745E4D;
+    width: 50%;
+    margin: 4px 0;
+    z-index: 3;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    background: #097969 url("../images/about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 650px 175px;
+}
+
+#about-container h1 {
+    color: #F8F7F4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 125px 0 0 0;
+}
+
+#about-text {
+    margin: 0 75px;
+}
+
+#about-1-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-text h2 {
+    color: #F8F7F4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    font-size: 25px;
+    margin: 0 0 16px 0;
+}
+
+#about-text p {
+    color: #F8F7F4;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    padding: 0 0 0 40px;
+    font-size: 20px;
+    margin: 17px 0;
+}
+
+#about-1-container img {
+    width: auto;
+    height: 250px;
+    margin: 16px 100px 0 16px;
+}
+
+#about-2-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-2-container section {
+    display: flex;
+    flex-direction: row;
+}
+
+#about-2-container img {
+    width: 200px;
+    height: auto;
+    margin: 0 18px;
+}
+
+#about-text2 {
+    margin: 0 50px 0 30px;
+}
+
+#about-text2 h2 {
+    color: #F8F7F4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 25px;
+    margin: 0 16px;
+}
+
+#about-text2 p {
+    color: #F8F7F4;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    margin: 18px 50px 0 16px;
+}
+
+#about-quote {
+    margin: -50px 0 10px 0;
+}
+
+#about-quote a {
+    color: #F8F7F4;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+#about-quote a:hover {
+    color: #C1C1C1;
+}
+
+#about-quote h1 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+    font-size: 50px;
+}
+
+#amenities-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.amenities-slider {
+    overflow: hidden;
+    width: 100vw;
+    height: 110vh;
+    position: absolute;
+}
+
+.amenities-slider .amenities-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: amenities-slider 27s infinite;
+}
+
+.amenities-slider .amenities-slide:nth-child(1) {
+    background: #097969 url("../images/amenities-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 0s;
+}
+
+.amenities-slider .amenities-slide:nth-child(2) {
+    background: #097969 url("../images/amenities-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -3s;
+}
+
+.amenities-slider .amenities-slide:nth-child(3) {
+    background: #097969 url("../images/amenities-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -6s;
+}
+
+.amenities-slider .amenities-slide:nth-child(4) {
+    background: #097969 url("../images/amenities-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -9s;
+}
+
+.amenities-slider .amenities-slide:nth-child(5) {
+    background: #097969 url("../images/amenities-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -12s;
+}
+
+.amenities-slider .amenities-slide:nth-child(6) {
+    background: #097969 url("../images/amenities-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -15s;
+}
+
+.amenities-slider .amenities-slide:nth-child(7) {
+    background: #097969 url("../images/amenities-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -18s;
+}
+
+.amenities-slider .amenities-slide:nth-child(8) {
+    background: #097969 url("../images/amenities-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -21s;
+}
+
+.amenities-slider .amenities-slide:nth-child(9) {
+    background: #097969 url("../images/amenities-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: -24s;
+}
+
+@keyframes amenities-slider {
+
+    0%,
+    7%,
+    100% {
+        opacity: 1;
+        animation-timing-function: ease;
+        z-index: 0;
+    }
+
+    11% {
+        opacity: 0;
+        animation-timing-function: step-end;
+        z-index: 0;
+    }
+
+    96% {
+        opacity: 1;
+        animation-timing-function: step-end;
+        z-index: -1;
+    }
+}
+
+#amenities-container h1 {
+    color: #F8F7F4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 125px 0 0 0;
+    z-index: 3;
+}
+
+#amenities-container p {
+    color: #F8F7F4;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    padding: 0 425px;
+    margin: 16px 0;
+    z-index: 3;
+}
+
+#amenities-card-container {
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+.amenities-card {
+    background: linear-gradient(rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0.40));
+    text-align: center;
+    justify-items: center;
+    opacity: 92%;
+    border-radius: 16px;
+    width: 300px;
+    height: 310px;
+    padding: 18px;
+    margin: 20px 30px 0 30px;
+}
+
+#amenities-card-container img {
+    height: 70px;
+    margin: 16px 0 0 0;
+}
+
+#amenities-card-container h3 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #392417;
+    font-size: 25px;
+    margin: 18px 0;
+    padding: 0 0;
+}
+
+#amenities-card-container ul {
+    list-style: none;
+}
+
+#amenities-card-container ul li {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #392417;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0 0 0 10px;
+    padding: 0 0;
+}
+
+#rates-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+    background: #097969 url("../images/rates-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 550px 350px;
+}
+
+#rates-container h1 {
+    color: #F8F7F4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: 140px 0 0 0;
+}
+
+#rates-container p {
+    color: #F8F7F4;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 10px 0 24px 0;
+}
+
+#rates-card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    opacity: 88%;
+}
+
+#rates-card-container img {
+    height: 70px;
+    margin: 0 0 28px 0;
+    opacity: 100%;
+}
+
+.rates-card-1 {
+    background: linear-gradient(to top, #F3DDCC, #FFFFFF);
+    text-align: center;
+    justify-items: center;
+    opacity: 100%;
+    margin: 0 32px 0 0;
+    padding: 40px;
+    border-radius: 1em;
+    width: 350px;
+}
+
+.rates-card-2 {
+    background: linear-gradient(to bottom, #392417, #795E4D 50%);
+    text-align: center;
+    justify-items: center;
+    opacity: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 350px;
+}
+
+#rates-card-container h2 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #392417;
+    font-size: 32px;
+    margin: 0 0 28px 0;
+}
+
+#rates-card-container h3 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #392417;
+    text-align: left;
+    font-size: 40px;
+    text-align: center;
+}
+
+#rates-card-container p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #392417;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 0 32px 0;
+}
+
+#rates-card-container .rates-card-2 h3 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 14px 0;
+}
+
+#rates-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 8px 0;
+}
+
+#rates-facebook-icon {
+    background-image: url("../images/svg/rates-facebook.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 60px;
+    margin: 18px;
+    opacity: 50%;
+}
+
+#rates-facebook-icon:hover {
+    background-image: url("../images/svg/rates-facebook.svg");
+    opacity: 100%;
+}
+
+#rates-phone-icon {
+    background-image: url("../images/svg/rates-phone.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 60px;
+    margin: 18px;
+    opacity: 50%;
+}
+
+#rates-phone-icon:hover {
+    background-image: url("../images/svg/rates-phone.svg");
+    opacity: 100%;
+}
+
+#rates-card-container .rates-card-2 img {
+    height: 65px;
+    margin: 0 0 28px 0;
+    opacity: 100%;
+}
+
+.rates-card-booking-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rates-card-container .rates-card-2 p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #392417;
+    text-align: left;
+    font-size: 16px;
+    padding: 16px 18px;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 110vh;
+    background: linear-gradient(to bottom, #F3DDCC, #FFFFFF);
+    padding: 500px 400px;
+}
+
+#contact-container h1 {
+    color: #F8F7F4;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #745E4D;
+    font-size: 40px;
+    margin: 100px 0 8px 0;
+}
+
+#contact-description {
+    color: #F8F7F4;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #745E4D;
+    font-size: 24px;
+    margin: 12px 0 28px 0;
+}
+
+.contact-us-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+
+.icon-background {
+    background-color: #392417;
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#contact-us-phone-icon {
+    background-image: url("../images/svg/contact-phone.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+
+#contact-us-email-icon {
+    background-image: url("../images/svg/contact-email.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+
+#contact-us-facebook-icon {
+    background-image: url("../images/svg/contact-facebook.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+    opacity: 100%;
+}
+
+#contact-us-facebook-icon:hover {
+    background-image: url("../images/svg/contact-facebook.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+    opacity: 80%;
+}
+
+.contact-us-card-title {
+    width: 100%;
+    background: linear-gradient(to bottom, #F8F7F4, #F1DDCD);
+    color: #745E4D !important;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 36px;
+    padding: 36px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: #392417;
+    color: #F8F7FD;
+    padding: 32px 80px;
+    justify-content: center;
+}
+
+#branding {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 24px;
+}
+
+#branding img {
+    height: 160px;
+}
+
+#branding p {
+    color: #F8F7FD !important;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    text-decoration: none !important;
+    margin: 0 250px 0 32px;
+    font-size: 32px;
+}
+
+#socials {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+#socials img {
+    height: 32px;
+    margin: 8px;
+}
+
+.contact-details {
+    color: #F8F7FD !important;
+    text-decoration: none !important;
+}
+
+.contact-details ul {
+    text-transform: none;
+    margin: -5px 0;
+    font-size: 16px;
+}
+
+.contact-details ul li {
+    padding: 17px 8px;
+}
+
+#subfooter {
+    background-color: #668747;
+    color: #392417;
+    padding: 11px 32px;
+}
+
+#left {
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+}
+
+#right {
+    text-align: right;
+    font-size: 16px;
+}

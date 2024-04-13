@@ -1,0 +1,434 @@
+@media only screen and (max-width: 360px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 15%;
+    }
+
+    nav {
+        margin: 8px 0 0 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    ul {
+        font-size: 12px;
+    }
+
+    nav ul li {
+        margin: 0 12px;
+    }
+
+    #title-container {
+        background-size: 200%;
+        background-position: right;
+        background-position-x: -320px;
+        background-position-y: 0px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title-container h1 {
+        left: 62px;
+        bottom: 110px;
+        font-size: 32px;
+    }
+
+    #title-container h2 {
+        bottom: 95px;
+        font-size: 18px;
+        letter-spacing: 0.30px;
+    }
+
+    #welcome {
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 32px 8px 32px;
+    }
+
+    #welcome-image {
+        width: 50%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+    #text-container {
+        margin: 0 0 0 16px;
+    }
+
+    #text-container h1 {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #text-container p {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+        text-align: left;
+    }
+
+    #find-us {
+        text-align: center;
+    }
+
+    #find-us-logo {
+        width: 7%;
+        margin: 32px 0 2px 0;
+    }
+
+    #find-us p {
+        font-size: 10px;
+    }
+
+    #address-container {
+        padding: 8px 0 32px 0;
+        font-size: 8px;
+    }
+
+    #map {
+        height: 110px;
+    }
+
+    .line-divider-white {
+        width: 50%;
+        margin: 8px 0;
+    }
+
+    .line-divider-brown {
+        width: 50%;
+        margin: 8px 0;
+    }
+
+    #about-container {
+        width: 100vw;
+        height: 120vh;
+        padding: 16px;
+    }
+
+    #about-container h1 {
+        font-size: 16px;
+        margin: 50px 0 0 0;
+    }
+
+    #about-1-container {
+        margin: 10px 0;
+    }
+
+    #about-text {
+        margin: 0 16px 0 0;
+    }
+
+    #about-text h2 {
+        font-size: 12px;
+        margin: 0 0 0 0;
+    }
+
+    #about-text p {
+        font-size: 10px;
+        margin: 5px 0;
+        padding: 0 0 0 16px;
+    }
+
+    #about-1-container img {
+        height: auto;
+        width: 135px;
+        margin: 0 0 0 0;
+    }
+
+    #about-2-container {
+        margin: 10px 0;
+    }
+
+    #about-2-container section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-2-container img {
+        height: auto;
+        width: 80px;
+        margin: 5px 20px;
+    }
+
+    #about-text2 {
+        margin: 0 10px;
+    }
+
+    #about-text2 h2 {
+        font-size: 13px;
+        margin: 0 0 0 0;
+    }
+
+    #about-text2 p {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    #about-quote {
+        margin: 20px 0;
+    }
+
+    #about-quote h1 {
+        font-size: 16px;
+        margin: 0 0 0 0;
+    }
+
+    #about-quote a {
+        font-size: 7px;
+    }
+
+    #quote {
+        font-size: 18px;
+        margin: 0 0 25px 0;
+    }
+
+    #amenities-container {
+        padding: 0 0 0 0;
+
+    }
+
+    #amenities-container h1 {
+        font-size: 16px;
+        margin: 100px 0 0 0;
+    }
+
+    #amenities-container p {
+        font-size: 10px;
+        padding: 0 50px;
+        margin: 5px 0 0 0;
+    }
+
+    #amenities-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .amenities-card {
+        border-radius: 16px;
+        width: 170px;
+        height: 150px;
+        padding: 8px;
+        margin: 12px 24px 0 24px;
+    }
+
+    #amenities-card-container img {
+        height: 20px;
+        margin: 5px 0;
+    }
+
+    #amenities-card-container h3 {
+        font-size: 10px;
+        margin: 0 0 8px 0;
+    }
+
+    #amenities-card-container ul li {
+        margin: 2px 4px;
+        padding: 0 0;
+        font-size: 9px;
+    }
+
+    #rates-container {
+        width: 100vw;
+        height: 110vh;
+        padding: 0 40px;
+    }
+
+    #rates-container h1 {
+        font-size: 16px;
+        margin: 105px 0 0 0;
+    }
+
+    #rates-container p {
+        font-size: 10px;
+        margin: 4px 0 8px 0;
+    }
+
+    #rates-card-container {
+        flex-direction: column;
+    }
+
+    #rates-card-container img {
+        height: 20px;
+        margin: 2px 0 4px 0;
+        opacity: 100%;
+    }
+
+    .rates-card-1 {
+        margin: 0 0 8px 0;
+        padding: 8px;
+        border-radius: 10px;
+        height: 170px;
+        width: 150px;
+    }
+
+    .rates-card-2 {
+        padding: 16px 10px 16px 10px;
+        border-radius: 10px;
+        max-width: 150px;
+    }
+
+    #rates-card-container h2 {
+        font-size: 14px;
+        margin: 0 0 4px 0;
+    }
+
+    #rates-card-container h3 {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+
+    #rates-card-container p {
+        font-size: 10px;
+        margin: 0 0 6px 0;
+    }
+
+    #rates-card-container .rates-card-2 h3 {
+        font-size: 8px;
+        margin: 0 0 0 0;
+    }
+
+    #rates-icon-container {
+        margin: 0 0 0 0;
+        max-height: 24px;
+    }
+
+    #rates-facebook-icon {
+        height: 18px;
+        width: 18px;
+        margin: 8px 8px 0 16px;
+        opacity: 50%;
+    }
+
+    #rates-phone-icon {
+        height: 18px;
+        width: 18px;
+        margin: 8px 16px 0 8px;
+        opacity: 50%;
+    }
+
+    #rates-card-container .rates-card-2 img {
+        height: 18px;
+        margin: 0 0 0 4px;
+        opacity: 100%;
+    }
+
+    #rates-card-container .rates-card-2 p {
+        font-size: 10px;
+        padding: 10px 8px 0 8px;
+    }
+
+    #contact-container {
+        width: 100vw;
+        height: 100vh;
+        padding: 0 20px;
+    }
+
+    #contact-container h1 {
+        font-size: 16px;
+        margin: 80px 0 8px 0;
+    }
+
+    #contact-description {
+        font-size: 10px;
+        margin: 16px 0 30px 0;
+    }
+
+    .contact-us-card {
+        margin: 0 0 32px 0;
+        width: 100%;
+    }
+
+    .icon-background {
+        padding: 16px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    #contact-us-phone-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    #contact-us-email-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    #contact-us-facebook-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    #contact-us-facebook-icon:hover {
+        height: 40px;
+        width: 40px;
+    }
+
+    .contact-us-card-title {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 14px;
+        padding: 28px;
+    }
+
+    footer {
+        display: flex;
+        padding: 16px 40px;
+        align-items: center;
+    }
+
+    #branding {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 24px 10px 24px 50px;
+    }
+
+    #branding img {
+        height: 80px;
+    }
+
+    #branding p {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    #socials {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    #socials img {
+        height: 16px;
+        margin: 4px;
+    }
+
+    .contact-details ul {
+        margin: -65px 0;
+    }
+
+    .contact-details ul li {
+        font-size: 6px;
+        padding: 12px 8px 7px 8px;
+    }
+
+    #left {
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #right {
+        text-align: center;
+        font-size: 12px;
+    }
+}
